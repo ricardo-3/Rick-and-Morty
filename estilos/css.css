@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+
+
+.container{
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    filter: brightness(300%);
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+}
+
+
+ .txt{
+    color: #fff;
+    background: black;
+    font-size: 55px;
+    letter-spacing: 4px;    
+    text-align: center;
+    margin: 30px 0 0 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.txt:before{
+    content: 'RICK AND MORTY' br 'CHARACTERS';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(1px);
+}
+
+
+
+.txt-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background: linear-gradient(114.5793141156962deg,rgb(6, 112, 150)
+                                4.927083333333334%,  rgb(255, 0, 64) 
+                                97.8437499999999%);
+}
+
+
+.txt-dodge{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    background: radial-gradient(
+        circle, white, black 35%)
+        center / 25% 25%;
+        animation:  neon 3s linear infinite;  
+}
+
+@keyframes neon {
+    to{
+        transform: translate(50%, 50%);
+    }
+}
+
+span{
+    color: cornsilk;
+    font-size: 17px;
+    margin-top: 9px;
+    font-family: 'Roboto', sans-serif;   
+}
+
+ul{
+    margin-top: 270px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+   
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    background-color: black;
+    background: linear-gradient(to left, #360033, #0b8793);
+    width: 251px;
+    height: 300px;
+        
+}
+
+li img{
+    width: 248px;
+    height: 250px;
+    
+    
+}
+
+/* media Query  */
+
+@media(max-width: 1022px){
+    .txt{
+        font-size: 43px; 
+     }
+ }
+
+ @media(max-width: 850px){
+    .txt{
+        font-size: 35px; 
+     }
+ }
+
+ @media(max-width: 657px){
+    .txt{
+        font-size: 27px; 
+     }
+ }
+
+ @media(max-width: 514px){
+    .txt{
+        font-size: 22px; 
+     }
+ }
+
+/* media Query before  */
+
+
+ @media(max-width: 1022px){
+    .txt:before{
+        font-size: 43px; 
+     }
+ }
+
+ @media(max-width: 850px){
+    .txt:before{
+        font-size: 35px; 
+     }
+ }
+
+ @media(max-width: 657px){
+    .txt:before{
+        font-size: 27px; 
+     }
+ }
+
+ @media(max-width: 514px){
+    .txt:before{
+        font-size: 22px; 
+     }
+ }
+
+
+
+
